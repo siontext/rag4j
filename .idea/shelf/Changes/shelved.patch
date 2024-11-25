@@ -1,0 +1,1872 @@
+Index: src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempQueryDslRepositoryImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempQueryDslRepositoryImpl.java b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempQueryDslRepositoryImpl.java
+new file mode 100644
+--- /dev/null	(date 1732524079518)
++++ b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempQueryDslRepositoryImpl.java	(date 1732524079518)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.out.persistence.repository;
++
++public class TempQueryDslRepositoryImpl {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempQueryDslRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempQueryDslRepository.java b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempQueryDslRepository.java
+new file mode 100644
+--- /dev/null	(date 1732524079518)
++++ b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempQueryDslRepository.java	(date 1732524079518)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.out.persistence.repository;
++
++public interface TempQueryDslRepository {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempRepository.java b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempRepository.java
+new file mode 100644
+--- /dev/null	(date 1732524079519)
++++ b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempRepository.java	(date 1732524079519)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.out.persistence.repository;
++
++public interface TempRepository extends TempSpringDataRepository , TempQueryDslRepository {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempSpringDataRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempSpringDataRepository.java b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempSpringDataRepository.java
+new file mode 100644
+--- /dev/null	(date 1732524079519)
++++ b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/repository/TempSpringDataRepository.java	(date 1732524079519)
+@@ -0,0 +1,8 @@
++package com.rag.rag4j.template.adapter.out.persistence.repository;
++
++import com.rag.rag4j.template.adapter.out.persistence.entity.TempEntity;
++import org.springframework.data.jpa.repository.JpaRepository;
++
++public interface TempSpringDataRepository extends JpaRepository<Long, TempEntity> {
++
++}
+Index: src/main/java/com/rag/rag4j/template/application/dto/command/TempCommand.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/application/dto/command/TempCommand.java b/src/main/java/com/rag/rag4j/template/application/dto/command/TempCommand.java
+new file mode 100644
+--- /dev/null	(date 1732524079521)
++++ b/src/main/java/com/rag/rag4j/template/application/dto/command/TempCommand.java	(date 1732524079521)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.application.dto.command;
++
++public class TempCommand {
++
++}
+Index: src/main/java/com/rag/rag4j/template/application/dto/factory/TempCommandFactory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/application/dto/factory/TempCommandFactory.java b/src/main/java/com/rag/rag4j/template/application/dto/factory/TempCommandFactory.java
+new file mode 100644
+--- /dev/null	(date 1732524079522)
++++ b/src/main/java/com/rag/rag4j/template/application/dto/factory/TempCommandFactory.java	(date 1732524079522)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.application.dto.factory;
++
++public class TempCommandFactory {
++
++}
+Index: src/main/java/com/rag/rag4j/template/application/dto/query/TempQuery.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/application/dto/query/TempQuery.java b/src/main/java/com/rag/rag4j/template/application/dto/query/TempQuery.java
+new file mode 100644
+--- /dev/null	(date 1732524079523)
++++ b/src/main/java/com/rag/rag4j/template/application/dto/query/TempQuery.java	(date 1732524079523)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.application.dto.query;
++
++public class TempQuery {
++
++}
+Index: src/main/java/com/rag/rag4j/template/application/domain/model/TempDomain.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/application/domain/model/TempDomain.java b/src/main/java/com/rag/rag4j/template/application/domain/model/TempDomain.java
+new file mode 100644
+--- /dev/null	(date 1732524079520)
++++ b/src/main/java/com/rag/rag4j/template/application/domain/model/TempDomain.java	(date 1732524079520)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.application.domain.model;
++
++public class TempDomain {
++
++}
+Index: src/main/java/com/rag/rag4j/template/application/domain/service/TempService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/application/domain/service/TempService.java b/src/main/java/com/rag/rag4j/template/application/domain/service/TempService.java
+new file mode 100644
+--- /dev/null	(date 1732524079520)
++++ b/src/main/java/com/rag/rag4j/template/application/domain/service/TempService.java	(date 1732524079520)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.application.domain.service;
++
++public class TempService {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/in/dto/TempDto.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/in/dto/TempDto.java b/src/main/java/com/rag/rag4j/template/adapter/in/dto/TempDto.java
+new file mode 100644
+--- /dev/null	(date 1732524079513)
++++ b/src/main/java/com/rag/rag4j/template/adapter/in/dto/TempDto.java	(date 1732524079513)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.in.dto;
++
++public record TempDto() {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/in/app/TempValidator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/in/app/TempValidator.java b/src/main/java/com/rag/rag4j/template/adapter/in/app/TempValidator.java
+new file mode 100644
+--- /dev/null	(date 1732524079513)
++++ b/src/main/java/com/rag/rag4j/template/adapter/in/app/TempValidator.java	(date 1732524079513)
+@@ -0,0 +1,8 @@
++package com.rag.rag4j.template.adapter.in.app;
++
++import lombok.experimental.UtilityClass;
++
++@UtilityClass
++class TempValidator {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/in/app/TempController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/in/app/TempController.java b/src/main/java/com/rag/rag4j/template/adapter/in/app/TempController.java
+new file mode 100644
+--- /dev/null	(date 1732524079512)
++++ b/src/main/java/com/rag/rag4j/template/adapter/in/app/TempController.java	(date 1732524079512)
+@@ -0,0 +1,12 @@
++package com.rag.rag4j.template.adapter.in.app;
++
++import com.rag.rag4j.common.documents.adaptor.WebRestAdapter;
++import lombok.RequiredArgsConstructor;
++import org.springframework.web.bind.annotation.RequestMapping;
++
++@WebRestAdapter
++@RequestMapping("/temp")
++@RequiredArgsConstructor
++public class TempController {
++
++}
+\ No newline at end of file
+Index: src/main/java/com/rag/rag4j/template/adapter/out/persistence/entity/TempEntity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/out/persistence/entity/TempEntity.java b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/entity/TempEntity.java
+new file mode 100644
+--- /dev/null	(date 1732524079517)
++++ b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/entity/TempEntity.java	(date 1732524079517)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.out.persistence.entity;
++
++public class TempEntity {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/out/persistence/mapper/TempMapper.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/out/persistence/mapper/TempMapper.java b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/mapper/TempMapper.java
+new file mode 100644
+--- /dev/null	(date 1732524079517)
++++ b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/mapper/TempMapper.java	(date 1732524079517)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.out.persistence.mapper;
++
++public class TempMapper {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/in/dto/request/TempRequest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/in/dto/request/TempRequest.java b/src/main/java/com/rag/rag4j/template/adapter/in/dto/request/TempRequest.java
+new file mode 100644
+--- /dev/null	(date 1732524079515)
++++ b/src/main/java/com/rag/rag4j/template/adapter/in/dto/request/TempRequest.java	(date 1732524079515)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.in.dto.request;
++
++public record TempRequest() {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/in/dto/response/TempResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/in/dto/response/TempResponse.java b/src/main/java/com/rag/rag4j/template/adapter/in/dto/response/TempResponse.java
+new file mode 100644
+--- /dev/null	(date 1732524079515)
++++ b/src/main/java/com/rag/rag4j/template/adapter/in/dto/response/TempResponse.java	(date 1732524079515)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.in.dto.response;
++
++public record TempResponse() {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/out/persistence/TempPersistentAdaptor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/out/persistence/TempPersistentAdaptor.java b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/TempPersistentAdaptor.java
+new file mode 100644
+--- /dev/null	(date 1732524079516)
++++ b/src/main/java/com/rag/rag4j/template/adapter/out/persistence/TempPersistentAdaptor.java	(date 1732524079516)
+@@ -0,0 +1,8 @@
++package com.rag.rag4j.template.adapter.out.persistence;
++
++import com.rag.rag4j.common.documents.adaptor.PersistenceAdapter;
++
++@PersistenceAdapter
++public class TempPersistentAdaptor {
++
++}
+Index: src/main/java/com/rag/rag4j/template/adapter/in/dto/factory/TempDtoFactory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/adapter/in/dto/factory/TempDtoFactory.java b/src/main/java/com/rag/rag4j/template/adapter/in/dto/factory/TempDtoFactory.java
+new file mode 100644
+--- /dev/null	(date 1732524079514)
++++ b/src/main/java/com/rag/rag4j/template/adapter/in/dto/factory/TempDtoFactory.java	(date 1732524079514)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.adapter.in.dto.factory;
++
++public class TempDtoFactory {
++
++}
+Index: src/main/resources/application-local.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/application-local.yaml b/src/main/resources/application-local.yaml
+new file mode 100644
+--- /dev/null	(date 1732524079525)
++++ b/src/main/resources/application-local.yaml	(date 1732524079525)
+@@ -0,0 +1,34 @@
++server:
++  port: 8082
++  host: http://localhost
++
++spring:
++  application:
++    name: rag4j
++  servlet:
++    multipart:
++      max-file-size: 500MB
++      max-request-size: 500MB
++  datasource:
++    url: jdbc:mysql://localhost:3306/rag4j
++    username: root
++    password: root
++    driver-class-name: com.mysql.cj.jdbc.Driver
++  jpa:
++    hibernate:
++      ddl-auto: update
++    show-sql: true
++    properties:
++      hibernate:
++        format_sql: true
++    open-in-view: false
++    database-platform: org.hibernate.dialect.MySQL8Dialect
++
++## JWT
++jwt:
++  issuer: "rag4j"
++  secret-key: "vphCLJGXSToCwwUnhATo8i8TDObsODt+tEYCfMCiFsI="
++  access-token:
++    expiration: 99999999999999999
++  refresh-token:
++    expiration: 99999999999999999
+\ No newline at end of file
+Index: src/main/resources/application-test.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/application-test.yaml b/src/main/resources/application-test.yaml
+new file mode 100644
+--- /dev/null	(date 1732524079525)
++++ b/src/main/resources/application-test.yaml	(date 1732524079525)
+@@ -0,0 +1,34 @@
++server:
++  port: 8082
++  host: http://localhost
++
++spring:
++  application:
++    name: rag4j
++  servlet:
++    multipart:
++      max-file-size: 500MB
++      max-request-size: 500MB
++  datasource:
++    url: jdbc:mysql://localhost:3306/rag4j
++    username: root
++    password: root
++    driver-class-name: com.mysql.cj.jdbc.Driver
++  jpa:
++    hibernate:
++      ddl-auto: update
++    show-sql: true
++    properties:
++      hibernate:
++        format_sql: true
++    open-in-view: false
++    database-platform: org.hibernate.dialect.MySQL8Dialect
++
++## JWT
++jwt:
++  issuer: "rag4j"
++  secret-key: "vphCLJGXSToCwwUnhATo8i8TDObsODt+tEYCfMCiFsI="
++  access-token:
++    expiration: 99999999999999999
++  refresh-token:
++    expiration: 99999999999999999
+\ No newline at end of file
+Index: etc/docker-compose.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/etc/docker-compose.yml b/etc/docker-compose.yml
+new file mode 100644
+--- /dev/null	(date 1732524079500)
++++ b/etc/docker-compose.yml	(date 1732524079500)
+@@ -0,0 +1,27 @@
++version: '3.8'
++
++services:
++  mysql:
++    image: mysql:8.0
++    container_name: mysql_container
++    ports:
++      - "3306:3306"
++    restart: always
++    environment:
++      MYSQL_DATABASE: rag4j
++      MYSQL_ROOT_PASSWORD: root
++      TZ: Asia/Seoul
++    command: >
++      bash -c "
++      docker-entrypoint.sh mysqld &
++      sleep 30 &&
++      mysql -u root -proot -e 'CREATE DATABASE IF NOT EXISTS rag4j;' &&
++      mysql -u root -proot -e 'CREATE DATABASE IF NOT EXISTS rag4j_test;' &&
++      mysql -u root -proot -e 'CREATE USER IF NOT EXISTS \"root\"@\"%\" IDENTIFIED BY \"root\";' &&
++      mysql -u root -proot -e 'GRANT ALL PRIVILEGES ON rag4j.* TO \"root\"@\"%\";' &&
++      mysql -u root -proot -e 'GRANT ALL PRIVILEGES ON rag4j_test.* TO \"root\"@\"%\";' &&
++      mysql -u root -proot -e 'FLUSH PRIVILEGES;' &&
++      wait
++      "
++    volumes:
++      - ./mysql:/var/lib/mysql
+\ No newline at end of file
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/gradle/wrapper/gradle-wrapper.properties b/gradle/wrapper/gradle-wrapper.properties
+new file mode 100644
+--- /dev/null	(date 1732524079501)
++++ b/gradle/wrapper/gradle-wrapper.properties	(date 1732524079501)
+@@ -0,0 +1,7 @@
++distributionBase=GRADLE_USER_HOME
++distributionPath=wrapper/dists
++distributionUrl=https\://services.gradle.org/distributions/gradle-8.11-bin.zip
++networkTimeout=10000
++validateDistributionUrl=true
++zipStoreBase=GRADLE_USER_HOME
++zipStorePath=wrapper/dists
+Index: etc/README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/etc/README.md b/etc/README.md
+new file mode 100644
+--- /dev/null	(date 1732524079499)
++++ b/etc/README.md	(date 1732524079499)
+@@ -0,0 +1,22 @@
++# Rag4j Project Local 환경 구성
++
++> 1. 해당 README.md 문서는 Rag4j Application의 Local 개발 환경 구성에 관하여 서술합니다.
++> 2. 해당 문서를 바탕으로 개발 환경 구성 진행 후 Rag4j application의 정상 구동이 불가능할 때에 하위 기재된 Main Tainer에게 연락을 부탁드립니다.  
++> * Main Tainer
++>    1. 임인혁 : dladlsgur3334@gmail.com
++---
++
++
++## 0.주의사항(선행작업)
++- 환경 설정을 진행하는 개발자의 local 환경에는 아래의 세가지 package가 존재해야한다.
++    - docker
++    - docker compose
++    - docker demon OR docker Desktop
++
++## 1. Docker Compose Start
++```bash
++# 1. /etc 경로에서 실행
++cd etc
++# 2. docker compose container set 실행
++docker compose up -d
++```
+\ No newline at end of file
+Index: src/main/java/com/rag/rag4j/common/adapter/in/dto/response/ICommonBody.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/adapter/in/dto/response/ICommonBody.java b/src/main/java/com/rag/rag4j/common/adapter/in/dto/response/ICommonBody.java
+new file mode 100644
+--- /dev/null	(date 1732524079505)
++++ b/src/main/java/com/rag/rag4j/common/adapter/in/dto/response/ICommonBody.java	(date 1732524079505)
+@@ -0,0 +1,11 @@
++package com.rag.rag4j.common.adapter.in.dto.response;
++
++public interface ICommonBody<T> {
++
++    long getCode();
++
++    String getMessage();
++
++    T getData();
++
++}
+\ No newline at end of file
+Index: src/main/java/com/rag/rag4j/common/adapter/in/dto/response/CommonBody.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/adapter/in/dto/response/CommonBody.java b/src/main/java/com/rag/rag4j/common/adapter/in/dto/response/CommonBody.java
+new file mode 100644
+--- /dev/null	(date 1732524079504)
++++ b/src/main/java/com/rag/rag4j/common/adapter/in/dto/response/CommonBody.java	(date 1732524079504)
+@@ -0,0 +1,28 @@
++package com.rag.rag4j.common.adapter.in.dto.response;
++
++import lombok.AccessLevel;
++import lombok.AllArgsConstructor;
++import lombok.Builder;
++import lombok.Getter;
++import lombok.NoArgsConstructor;
++
++@Getter
++@Builder
++@AllArgsConstructor(access = AccessLevel.PRIVATE)
++@NoArgsConstructor(access = AccessLevel.PRIVATE)
++public class CommonBody<T> implements ICommonBody<T>{
++
++    private long code;
++
++    private String message;
++
++    private T data;
++
++    public static <T> CommonBody <T> of(long code, String message, T data) {
++        return new CommonBodyBuilder<T>()
++            .code(code)
++            .message(message)
++            .data(data)
++            .build();
++    }
++}
+\ No newline at end of file
+Index: src/main/java/com/rag/rag4j/common/application/domain/model/BaseDomain.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/application/domain/model/BaseDomain.java b/src/main/java/com/rag/rag4j/common/application/domain/model/BaseDomain.java
+new file mode 100644
+--- /dev/null	(date 1732524079506)
++++ b/src/main/java/com/rag/rag4j/common/application/domain/model/BaseDomain.java	(date 1732524079506)
+@@ -0,0 +1,36 @@
++package com.rag.rag4j.common.application.domain.model;
++
++import com.rag.rag4j.common.enums.CommonStatus;
++import java.time.LocalDateTime;
++
++import java.time.ZoneId;
++import java.time.ZonedDateTime;
++import lombok.AccessLevel;
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++import lombok.NoArgsConstructor;
++import lombok.experimental.SuperBuilder;
++
++@Getter
++@SuperBuilder
++@NoArgsConstructor(access = AccessLevel.PROTECTED)
++@AllArgsConstructor(access = AccessLevel.PRIVATE)
++public abstract class BaseDomain {
++
++    protected CommonStatus status;
++
++    private LocalDateTime createdAt;
++
++    private long createdAtEpochTime;
++
++    private LocalDateTime updatedAt;
++
++    private long updatedAtEpochTime;
++
++    protected long convertToEpochSecond(LocalDateTime dateTime) {
++        ZoneId zoneId = ZoneId.systemDefault();
++        ZonedDateTime zoneDateTime = dateTime.atZone(zoneId);
++        return zoneDateTime.toEpochSecond();
++    }
++
++}
+Index: src/main/resources/application-dev.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/application-dev.yaml b/src/main/resources/application-dev.yaml
+new file mode 100644
+--- /dev/null	(date 1732524079525)
++++ b/src/main/resources/application-dev.yaml	(date 1732524079525)
+@@ -0,0 +1,34 @@
++server:
++  port: 8082
++  host: http://localhost
++
++spring:
++  application:
++    name: rag4j
++  servlet:
++    multipart:
++      max-file-size: 500MB
++      max-request-size: 500MB
++  datasource:
++    url: jdbc:mysql://localhost:3306/rag4j
++    username: root
++    password: root
++    driver-class-name: com.mysql.cj.jdbc.Driver
++  jpa:
++    hibernate:
++      ddl-auto: update
++    show-sql: true
++    properties:
++      hibernate:
++        format_sql: true
++    open-in-view: false
++    database-platform: org.hibernate.dialect.MySQL8Dialect
++
++## JWT
++jwt:
++  issuer: "rag4j"
++  secret-key: "vphCLJGXSToCwwUnhATo8i8TDObsODt+tEYCfMCiFsI="
++  access-token:
++    expiration: 99999999999999999
++  refresh-token:
++    expiration: 99999999999999999
+\ No newline at end of file
+Index: .gitattributes
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitattributes b/.gitattributes
+new file mode 100644
+--- /dev/null	(date 1732524079496)
++++ b/.gitattributes	(date 1732524079496)
+@@ -0,0 +1,3 @@
++/gradlew text eol=lf
++*.bat text eol=crlf
++*.jar binary
+Index: gradlew.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradlew.bat b/gradlew.bat
+new file mode 100644
+--- /dev/null	(date 1732524079502)
++++ b/gradlew.bat	(date 1732524079502)
+@@ -0,0 +1,94 @@
++@rem
++@rem Copyright 2015 the original author or authors.
++@rem
++@rem Licensed under the Apache License, Version 2.0 (the "License");
++@rem you may not use this file except in compliance with the License.
++@rem You may obtain a copy of the License at
++@rem
++@rem      https://www.apache.org/licenses/LICENSE-2.0
++@rem
++@rem Unless required by applicable law or agreed to in writing, software
++@rem distributed under the License is distributed on an "AS IS" BASIS,
++@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++@rem See the License for the specific language governing permissions and
++@rem limitations under the License.
++@rem
++@rem SPDX-License-Identifier: Apache-2.0
++@rem
++
++@if "%DEBUG%"=="" @echo off
++@rem ##########################################################################
++@rem
++@rem  Gradle startup script for Windows
++@rem
++@rem ##########################################################################
++
++@rem Set local scope for the variables with windows NT shell
++if "%OS%"=="Windows_NT" setlocal
++
++set DIRNAME=%~dp0
++if "%DIRNAME%"=="" set DIRNAME=.
++@rem This is normally unused
++set APP_BASE_NAME=%~n0
++set APP_HOME=%DIRNAME%
++
++@rem Resolve any "." and ".." in APP_HOME to make it shorter.
++for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
++
++@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
++
++@rem Find java.exe
++if defined JAVA_HOME goto findJavaFromJavaHome
++
++set JAVA_EXE=java.exe
++%JAVA_EXE% -version >NUL 2>&1
++if %ERRORLEVEL% equ 0 goto execute
++
++echo. 1>&2
++echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
++echo. 1>&2
++echo Please set the JAVA_HOME variable in your environment to match the 1>&2
++echo location of your Java installation. 1>&2
++
++goto fail
++
++:findJavaFromJavaHome
++set JAVA_HOME=%JAVA_HOME:"=%
++set JAVA_EXE=%JAVA_HOME%/bin/java.exe
++
++if exist "%JAVA_EXE%" goto execute
++
++echo. 1>&2
++echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
++echo. 1>&2
++echo Please set the JAVA_HOME variable in your environment to match the 1>&2
++echo location of your Java installation. 1>&2
++
++goto fail
++
++:execute
++@rem Setup the command line
++
++set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
++
++
++@rem Execute Gradle
++"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %*
++
++:end
++@rem End local scope for the variables with windows NT shell
++if %ERRORLEVEL% equ 0 goto mainEnd
++
++:fail
++rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
++rem the _cmd.exe /c_ return code!
++set EXIT_CODE=%ERRORLEVEL%
++if %EXIT_CODE% equ 0 set EXIT_CODE=1
++if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
++exit /b %EXIT_CODE%
++
++:mainEnd
++if "%OS%"=="Windows_NT" endlocal
++
++:omega
+Index: settings.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/settings.gradle b/settings.gradle
+new file mode 100644
+--- /dev/null	(date 1732524079503)
++++ b/settings.gradle	(date 1732524079503)
+@@ -0,0 +1,1 @@
++rootProject.name = 'rag4j'
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732524079497)
++++ b/.gitignore	(date 1732524079497)
+@@ -0,0 +1,37 @@
++HELP.md
++.gradle
++build/
++!gradle/wrapper/gradle-wrapper.jar
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### STS ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### IntelliJ IDEA ###
++.idea
++*.iws
++*.iml
++*.ipr
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
+Index: src/main/java/com/rag/rag4j/template/application/port/in/TempUseCase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/application/port/in/TempUseCase.java b/src/main/java/com/rag/rag4j/template/application/port/in/TempUseCase.java
+new file mode 100644
+--- /dev/null	(date 1732524079523)
++++ b/src/main/java/com/rag/rag4j/template/application/port/in/TempUseCase.java	(date 1732524079523)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.application.port.in;
++
++public interface TempUseCase {
++
++}
+\ No newline at end of file
+Index: gradlew
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradlew b/gradlew
+new file mode 100755
+--- /dev/null	(date 1732524079502)
++++ b/gradlew	(date 1732524079502)
+@@ -0,0 +1,252 @@
++#!/bin/sh
++
++#
++# Copyright © 2015-2021 the original authors.
++#
++# Licensed under the Apache License, Version 2.0 (the "License");
++# you may not use this file except in compliance with the License.
++# You may obtain a copy of the License at
++#
++#      https://www.apache.org/licenses/LICENSE-2.0
++#
++# Unless required by applicable law or agreed to in writing, software
++# distributed under the License is distributed on an "AS IS" BASIS,
++# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++# See the License for the specific language governing permissions and
++# limitations under the License.
++#
++# SPDX-License-Identifier: Apache-2.0
++#
++
++##############################################################################
++#
++#   Gradle start up script for POSIX generated by Gradle.
++#
++#   Important for running:
++#
++#   (1) You need a POSIX-compliant shell to run this script. If your /bin/sh is
++#       noncompliant, but you have some other compliant shell such as ksh or
++#       bash, then to run this script, type that shell name before the whole
++#       command line, like:
++#
++#           ksh Gradle
++#
++#       Busybox and similar reduced shells will NOT work, because this script
++#       requires all of these POSIX shell features:
++#         * functions;
++#         * expansions «$var», «${var}», «${var:-default}», «${var+SET}»,
++#           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
++#         * compound commands having a testable exit status, especially «case»;
++#         * various built-in commands including «command», «set», and «ulimit».
++#
++#   Important for patching:
++#
++#   (2) This script targets any POSIX shell, so it avoids extensions provided
++#       by Bash, Ksh, etc; in particular arrays are avoided.
++#
++#       The "traditional" practice of packing multiple parameters into a
++#       space-separated string is a well documented source of bugs and security
++#       problems, so this is (mostly) avoided, by progressively accumulating
++#       options in "$@", and eventually passing that to Java.
++#
++#       Where the inherited environment variables (DEFAULT_JVM_OPTS, JAVA_OPTS,
++#       and GRADLE_OPTS) rely on word-splitting, this is performed explicitly;
++#       see the in-line comments for details.
++#
++#       There are tweaks for specific operating systems such as AIX, CygWin,
++#       Darwin, MinGW, and NonStop.
++#
++#   (3) This script is generated from the Groovy template
++#       https://github.com/gradle/gradle/blob/HEAD/platforms/jvm/plugins-application/src/main/resources/org/gradle/api/internal/plugins/unixStartScript.txt
++#       within the Gradle project.
++#
++#       You can find Gradle at https://github.com/gradle/gradle/.
++#
++##############################################################################
++
++# Attempt to set APP_HOME
++
++# Resolve links: $0 may be a link
++app_path=$0
++
++# Need this for daisy-chained symlinks.
++while
++    APP_HOME=${app_path%"${app_path##*/}"}  # leaves a trailing /; empty if no leading path
++    [ -h "$app_path" ]
++do
++    ls=$( ls -ld "$app_path" )
++    link=${ls#*' -> '}
++    case $link in             #(
++      /*)   app_path=$link ;; #(
++      *)    app_path=$APP_HOME$link ;;
++    esac
++done
++
++# This is normally unused
++# shellcheck disable=SC2034
++APP_BASE_NAME=${0##*/}
++# Discard cd standard output in case $CDPATH is set (https://github.com/gradle/gradle/issues/25036)
++APP_HOME=$( cd -P "${APP_HOME:-./}" > /dev/null && printf '%s
++' "$PWD" ) || exit
++
++# Use the maximum available, or set MAX_FD != -1 to use that value.
++MAX_FD=maximum
++
++warn () {
++    echo "$*"
++} >&2
++
++die () {
++    echo
++    echo "$*"
++    echo
++    exit 1
++} >&2
++
++# OS specific support (must be 'true' or 'false').
++cygwin=false
++msys=false
++darwin=false
++nonstop=false
++case "$( uname )" in                #(
++  CYGWIN* )         cygwin=true  ;; #(
++  Darwin* )         darwin=true  ;; #(
++  MSYS* | MINGW* )  msys=true    ;; #(
++  NONSTOP* )        nonstop=true ;;
++esac
++
++CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
++
++
++# Determine the Java command to use to start the JVM.
++if [ -n "$JAVA_HOME" ] ; then
++    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
++        # IBM's JDK on AIX uses strange locations for the executables
++        JAVACMD=$JAVA_HOME/jre/sh/java
++    else
++        JAVACMD=$JAVA_HOME/bin/java
++    fi
++    if [ ! -x "$JAVACMD" ] ; then
++        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++    fi
++else
++    JAVACMD=java
++    if ! command -v java >/dev/null 2>&1
++    then
++        die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++    fi
++fi
++
++# Increase the maximum file descriptors if we can.
++if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
++    case $MAX_FD in #(
++      max*)
++        # In POSIX sh, ulimit -H is undefined. That's why the result is checked to see if it worked.
++        # shellcheck disable=SC2039,SC3045
++        MAX_FD=$( ulimit -H -n ) ||
++            warn "Could not query maximum file descriptor limit"
++    esac
++    case $MAX_FD in  #(
++      '' | soft) :;; #(
++      *)
++        # In POSIX sh, ulimit -n is undefined. That's why the result is checked to see if it worked.
++        # shellcheck disable=SC2039,SC3045
++        ulimit -n "$MAX_FD" ||
++            warn "Could not set maximum file descriptor limit to $MAX_FD"
++    esac
++fi
++
++# Collect all arguments for the java command, stacking in reverse order:
++#   * args from the command line
++#   * the main class name
++#   * -classpath
++#   * -D...appname settings
++#   * --module-path (only if needed)
++#   * DEFAULT_JVM_OPTS, JAVA_OPTS, and GRADLE_OPTS environment variables.
++
++# For Cygwin or MSYS, switch paths to Windows format before running java
++if "$cygwin" || "$msys" ; then
++    APP_HOME=$( cygpath --path --mixed "$APP_HOME" )
++    CLASSPATH=$( cygpath --path --mixed "$CLASSPATH" )
++
++    JAVACMD=$( cygpath --unix "$JAVACMD" )
++
++    # Now convert the arguments - kludge to limit ourselves to /bin/sh
++    for arg do
++        if
++            case $arg in                                #(
++              -*)   false ;;                            # don't mess with options #(
++              /?*)  t=${arg#/} t=/${t%%/*}              # looks like a POSIX filepath
++                    [ -e "$t" ] ;;                      #(
++              *)    false ;;
++            esac
++        then
++            arg=$( cygpath --path --ignore --mixed "$arg" )
++        fi
++        # Roll the args list around exactly as many times as the number of
++        # args, so each arg winds up back in the position where it started, but
++        # possibly modified.
++        #
++        # NB: a `for` loop captures its iteration list before it begins, so
++        # changing the positional parameters here affects neither the number of
++        # iterations, nor the values presented in `arg`.
++        shift                   # remove old arg
++        set -- "$@" "$arg"      # push replacement arg
++    done
++fi
++
++
++# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
++
++# Collect all arguments for the java command:
++#   * DEFAULT_JVM_OPTS, JAVA_OPTS, JAVA_OPTS, and optsEnvironmentVar are not allowed to contain shell fragments,
++#     and any embedded shellness will be escaped.
++#   * For example: A user cannot expect ${Hostname} to be expanded, as it is an environment variable and will be
++#     treated as '${Hostname}' itself on the command line.
++
++set -- \
++        "-Dorg.gradle.appname=$APP_BASE_NAME" \
++        -classpath "$CLASSPATH" \
++        org.gradle.wrapper.GradleWrapperMain \
++        "$@"
++
++# Stop when "xargs" is not available.
++if ! command -v xargs >/dev/null 2>&1
++then
++    die "xargs is not available"
++fi
++
++# Use "xargs" to parse quoted args.
++#
++# With -n1 it outputs one arg per line, with the quotes and backslashes removed.
++#
++# In Bash we could simply go:
++#
++#   readarray ARGS < <( xargs -n1 <<<"$var" ) &&
++#   set -- "${ARGS[@]}" "$@"
++#
++# but POSIX shell has neither arrays nor command substitution, so instead we
++# post-process each arg (as a line of input to sed) to backslash-escape any
++# character that might be a shell metacharacter, then use eval to reverse
++# that process (while maintaining the separation between arguments), and wrap
++# the whole thing up as a single "set" statement.
++#
++# This will of course break if any of these variables contains a newline or
++# an unmatched quote.
++#
++
++eval "set -- $(
++        printf '%s\n' "$DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS" |
++        xargs -n1 |
++        sed ' s~[^-[:alnum:]+,./:=@_]~\\&~g; ' |
++        tr '\n' ' '
++    )" '"$@"'
++
++exec "$JAVACMD" "$@"
+Index: src/main/java/com/rag/rag4j/template/application/dto/factory/TempQueryFactory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/application/dto/factory/TempQueryFactory.java b/src/main/java/com/rag/rag4j/template/application/dto/factory/TempQueryFactory.java
+new file mode 100644
+--- /dev/null	(date 1732524079522)
++++ b/src/main/java/com/rag/rag4j/template/application/dto/factory/TempQueryFactory.java	(date 1732524079522)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.template.application.dto.factory;
++
++public class TempQueryFactory {
++
++}
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+new file mode 100644
+--- /dev/null	(date 1732524079498)
++++ b/build.gradle	(date 1732524079498)
+@@ -0,0 +1,57 @@
++plugins {
++    id 'java'
++    id 'org.springframework.boot' version '3.4.0'
++    id 'io.spring.dependency-management' version '1.1.6'
++    id 'org.asciidoctor.jvm.convert' version '3.3.2'
++}
++
++group = 'com.rag'
++version = '0.0.1-SNAPSHOT'
++
++java {
++    toolchain {
++        languageVersion = JavaLanguageVersion.of(21)
++    }
++}
++
++configurations {
++    compileOnly {
++        extendsFrom annotationProcessor
++    }
++}
++
++repositories {
++    mavenCentral()
++}
++
++ext {
++    set('snippetsDir', file("build/generated-snippets"))
++}
++
++dependencies {
++    // spring
++    implementation 'org.springframework.boot:spring-boot-starter-web'
++    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
++
++    // lombok
++    compileOnly 'org.projectlombok:lombok'
++    annotationProcessor 'org.projectlombok:lombok'
++
++    // db
++    runtimeOnly 'com.mysql:mysql-connector-j'
++
++    // test
++    testImplementation 'org.springframework.boot:spring-boot-starter-test'
++    testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
++    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
++}
++
++tasks.named('test') {
++    outputs.dir snippetsDir
++    useJUnitPlatform()
++}
++
++tasks.named('asciidoctor') {
++    inputs.dir snippetsDir
++    dependsOn test
++}
+Index: lombok.config
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lombok.config b/lombok.config
+new file mode 100644
+--- /dev/null	(date 1732524079502)
++++ b/lombok.config	(date 1732524079502)
+@@ -0,0 +1,1 @@
++lombok.addLombokGeneratedAnnotation = true
+\ No newline at end of file
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+new file mode 100644
+--- /dev/null	(date 1732524079497)
++++ b/README.md	(date 1732524079497)
+@@ -0,0 +1,5 @@
++# Rag4j
++
++---
++
++[1. Tech Stack](/doc/tech)
+\ No newline at end of file
+Index: src/main/java/com/rag/rag4j/common/documents/adaptor/PersistenceAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/documents/adaptor/PersistenceAdapter.java b/src/main/java/com/rag/rag4j/common/documents/adaptor/PersistenceAdapter.java
+new file mode 100644
+--- /dev/null	(date 1732524079508)
++++ b/src/main/java/com/rag/rag4j/common/documents/adaptor/PersistenceAdapter.java	(date 1732524079508)
+@@ -0,0 +1,26 @@
++package com.rag.rag4j.common.documents.adaptor;
++
++import java.lang.annotation.Documented;
++import java.lang.annotation.ElementType;
++import java.lang.annotation.Retention;
++import java.lang.annotation.RetentionPolicy;
++import java.lang.annotation.Target;
++import org.springframework.core.annotation.AliasFor;
++import org.springframework.stereotype.Repository;
++
++@Repository
++@Target({ElementType.TYPE})
++@Retention(RetentionPolicy.RUNTIME)
++@Documented
++public @interface PersistenceAdapter {
++
++  /**
++   Persistence Adaptor Class를 명시하기 위한 Annotation
++   기존 @Repositroy Annotation 대신 해당 Annotation을 사용하도록 한다.
++   @author : PLO
++   @return : String
++   */
++  @AliasFor(annotation = Repository.class)
++  String value() default "";
++
++}
+Index: src/main/java/com/rag/rag4j/common/documents/adaptor/WebRestAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/documents/adaptor/WebRestAdapter.java b/src/main/java/com/rag/rag4j/common/documents/adaptor/WebRestAdapter.java
+new file mode 100644
+--- /dev/null	(date 1732524079508)
++++ b/src/main/java/com/rag/rag4j/common/documents/adaptor/WebRestAdapter.java	(date 1732524079508)
+@@ -0,0 +1,26 @@
++package com.rag.rag4j.common.documents.adaptor;
++
++import java.lang.annotation.Documented;
++import java.lang.annotation.ElementType;
++import java.lang.annotation.Retention;
++import java.lang.annotation.RetentionPolicy;
++import java.lang.annotation.Target;
++import org.springframework.core.annotation.AliasFor;
++import org.springframework.web.bind.annotation.RestController;
++
++@RestController
++@Target({ElementType.TYPE})
++@Retention(RetentionPolicy.RUNTIME)
++@Documented
++public @interface WebRestAdapter {
++
++  /**
++   WebRest API Adaptor Class를 명시하기 위한 Annotation
++   기존 @RestController Annotation 대신 해당 Annotation을 사용하도록 한다.
++   @author : PLO
++   @return : String
++   */
++  @AliasFor(annotation = RestController.class)
++  String value() default "";
++
++}
+Index: src/main/java/com/rag/rag4j/common/documents/adaptor/InfraRestApiAdaptor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/documents/adaptor/InfraRestApiAdaptor.java b/src/main/java/com/rag/rag4j/common/documents/adaptor/InfraRestApiAdaptor.java
+new file mode 100644
+--- /dev/null	(date 1732524079508)
++++ b/src/main/java/com/rag/rag4j/common/documents/adaptor/InfraRestApiAdaptor.java	(date 1732524079508)
+@@ -0,0 +1,23 @@
++package com.rag.rag4j.common.documents.adaptor;
++
++import org.springframework.core.annotation.AliasFor;
++import org.springframework.stereotype.Component;
++
++import java.lang.annotation.*;
++
++@Component
++@Target({ElementType.TYPE})
++@Retention(RetentionPolicy.RUNTIME)
++@Documented
++public @interface InfraRestApiAdaptor {
++
++  /**
++   Infra Layer의 API Adaptor Class를 명시하기 위한 Annotation
++   Infra Layer의 Rest API 호출 Component에 해당 Annotation을 사용하도록 한다.
++   @author : PLO
++   @return : String
++   */
++  @AliasFor(annotation = Component.class)
++  String value() default "";
++
++}
+\ No newline at end of file
+Index: src/main/java/com/rag/rag4j/common/documents/adaptor/InAppAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/documents/adaptor/InAppAdapter.java b/src/main/java/com/rag/rag4j/common/documents/adaptor/InAppAdapter.java
+new file mode 100644
+--- /dev/null	(date 1732524079507)
++++ b/src/main/java/com/rag/rag4j/common/documents/adaptor/InAppAdapter.java	(date 1732524079507)
+@@ -0,0 +1,23 @@
++package com.rag.rag4j.common.documents.adaptor;
++
++import org.springframework.core.annotation.AliasFor;
++import org.springframework.stereotype.Component;
++
++import java.lang.annotation.*;
++
++@Component
++@Target({ElementType.TYPE})
++@Retention(RetentionPolicy.RUNTIME)
++@Documented
++public @interface InAppAdapter {
++
++  /**
++   In App Adaptor Class를 명시하기 위한 Annotation
++   기존 @Component Annotation 대신 해당 Annotation을 사용하도록 한다.
++   @author : PLO
++   @return : String
++   */
++  @AliasFor(annotation = Component.class)
++  String value() default "";
++
++}
+Index: src/main/java/com/rag/rag4j/common/documents/UseCase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/documents/UseCase.java b/src/main/java/com/rag/rag4j/common/documents/UseCase.java
+new file mode 100644
+--- /dev/null	(date 1732524079507)
++++ b/src/main/java/com/rag/rag4j/common/documents/UseCase.java	(date 1732524079507)
+@@ -0,0 +1,26 @@
++package com.rag.rag4j.common.documents;
++
++import java.lang.annotation.Documented;
++import java.lang.annotation.ElementType;
++import java.lang.annotation.Retention;
++import java.lang.annotation.RetentionPolicy;
++import java.lang.annotation.Target;
++import org.springframework.core.annotation.AliasFor;
++import org.springframework.stereotype.Service;
++
++@Service
++@Target({ElementType.TYPE})
++@Retention(RetentionPolicy.RUNTIME)
++@Documented
++public @interface UseCase {
++
++  /**
++   UseCase Class를 명시하기 위한 Annotation
++   기존 @Service Annotation 대신 해당 Annotation을 사용하도록 한다.
++   @author : PLO
++   @return : String
++   */
++  @AliasFor(annotation = Service.class)
++  String value() default "";
++
++}
+Index: src/main/java/com/rag/rag4j/Rag4jApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/Rag4jApplication.java b/src/main/java/com/rag/rag4j/Rag4jApplication.java
+new file mode 100644
+--- /dev/null	(date 1732524079503)
++++ b/src/main/java/com/rag/rag4j/Rag4jApplication.java	(date 1732524079503)
+@@ -0,0 +1,13 @@
++package com.rag.rag4j;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class Rag4jApplication {
++
++    public static void main(String[] args) {
++        SpringApplication.run(Rag4jApplication.class, args);
++    }
++
++}
+Index: src/main/java/com/rag/rag4j/common/adapter/out/persistence/entity/BaseEntity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/adapter/out/persistence/entity/BaseEntity.java b/src/main/java/com/rag/rag4j/common/adapter/out/persistence/entity/BaseEntity.java
+new file mode 100644
+--- /dev/null	(date 1732524079506)
++++ b/src/main/java/com/rag/rag4j/common/adapter/out/persistence/entity/BaseEntity.java	(date 1732524079506)
+@@ -0,0 +1,61 @@
++package com.rag.rag4j.common.adapter.out.persistence.entity;
++
++import com.rag.rag4j.common.enums.CommonStatus;
++import jakarta.persistence.Column;
++import jakarta.persistence.EntityListeners;
++import jakarta.persistence.EnumType;
++import jakarta.persistence.Enumerated;
++import jakarta.persistence.MappedSuperclass;
++import jakarta.persistence.PrePersist;
++import jakarta.persistence.PreUpdate;
++import java.time.LocalDateTime;
++import java.time.ZoneId;
++import java.time.ZonedDateTime;
++import lombok.AccessLevel;
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++import lombok.NoArgsConstructor;
++import lombok.experimental.SuperBuilder;
++import org.springframework.data.annotation.CreatedDate;
++import org.springframework.data.annotation.LastModifiedDate;
++import org.springframework.data.jpa.domain.support.AuditingEntityListener;
++
++@Getter
++@SuperBuilder
++@MappedSuperclass
++@EntityListeners(AuditingEntityListener.class)
++@NoArgsConstructor(access = AccessLevel.PROTECTED)
++@AllArgsConstructor(access = AccessLevel.PRIVATE)
++public abstract class BaseEntity {
++
++    @Enumerated(EnumType.STRING)
++    @Column(nullable = false, length = 10)
++    protected CommonStatus status;
++
++    @CreatedDate
++    private LocalDateTime createdAt;
++
++    private long createdAtEpochTime;
++
++    @LastModifiedDate
++    private LocalDateTime updatedAt;
++
++    private long updatedAtEpochTime;
++
++    @PrePersist
++    protected void onCreate() {
++        this.createdAtEpochTime = convertToEpochSecond(this.createdAt);
++    }
++
++    @PreUpdate
++    protected void onUpdate() {
++        this.updatedAtEpochTime = convertToEpochSecond(this.updatedAt);
++    }
++
++    protected long convertToEpochSecond(LocalDateTime dateTime) {
++        ZoneId zoneId = ZoneId.systemDefault();
++        ZonedDateTime zoneDateTime = dateTime.atZone(zoneId);
++        return zoneDateTime.toEpochSecond();
++    }
++
++}
+Index: src/main/java/com/rag/rag4j/common/enums/CommonTimeZone.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/enums/CommonTimeZone.java b/src/main/java/com/rag/rag4j/common/enums/CommonTimeZone.java
+new file mode 100644
+--- /dev/null	(date 1732524079509)
++++ b/src/main/java/com/rag/rag4j/common/enums/CommonTimeZone.java	(date 1732524079509)
+@@ -0,0 +1,14 @@
++package com.rag.rag4j.common.enums;
++
++import java.util.TimeZone;
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++
++@Getter
++@AllArgsConstructor
++public enum CommonTimeZone {
++    ASIA_SEOUL(TimeZone.getTimeZone("Asia/Seoul"));
++
++    private TimeZone zone;
++
++}
+Index: src/main/java/com/rag/rag4j/common/enums/code/ICommonCustomCode.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/enums/code/ICommonCustomCode.java b/src/main/java/com/rag/rag4j/common/enums/code/ICommonCustomCode.java
+new file mode 100644
+--- /dev/null	(date 1732524079510)
++++ b/src/main/java/com/rag/rag4j/common/enums/code/ICommonCustomCode.java	(date 1732524079510)
+@@ -0,0 +1,5 @@
++package com.rag.rag4j.common.enums.code;
++
++public interface ICommonCustomCode {
++    long getCode();
++}
+Index: src/main/java/com/rag/rag4j/common/enums/CommonStatus.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/enums/CommonStatus.java b/src/main/java/com/rag/rag4j/common/enums/CommonStatus.java
+new file mode 100644
+--- /dev/null	(date 1732524079509)
++++ b/src/main/java/com/rag/rag4j/common/enums/CommonStatus.java	(date 1732524079509)
+@@ -0,0 +1,13 @@
++package com.rag.rag4j.common.enums;
++
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++
++import java.util.TimeZone;
++
++@AllArgsConstructor
++public enum CommonStatus {
++
++    ACTIVE, INACTIVE
++
++}
+Index: src/main/java/com/rag/rag4j/common/exception/GlobalExceptionHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/exception/GlobalExceptionHandler.java b/src/main/java/com/rag/rag4j/common/exception/GlobalExceptionHandler.java
+new file mode 100644
+--- /dev/null	(date 1732524079511)
++++ b/src/main/java/com/rag/rag4j/common/exception/GlobalExceptionHandler.java	(date 1732524079511)
+@@ -0,0 +1,91 @@
++package com.rag.rag4j.common.exception;
++
++import com.rag.rag4j.common.adapter.in.dto.response.CommonBody;
++import com.rag.rag4j.common.adapter.in.dto.response.ICommonBody;
++import com.rag.rag4j.common.enums.code.ICommonCustomCode;
++import com.rag.rag4j.common.exception.response.ICommonResponseCode;
++import lombok.extern.slf4j.Slf4j;
++import org.springframework.http.HttpStatus;
++import org.springframework.http.ResponseEntity;
++import org.springframework.http.converter.HttpMessageNotReadableException;
++import org.springframework.validation.BindException;
++import org.springframework.web.bind.MethodArgumentNotValidException;
++import org.springframework.web.bind.MissingServletRequestParameterException;
++import org.springframework.web.bind.annotation.ExceptionHandler;
++import org.springframework.web.bind.annotation.RestControllerAdvice;
++
++@Slf4j
++@RestControllerAdvice
++public class GlobalExceptionHandler {
++
++    /**
++     * 서버 공통 정의 예외를 handling 하는 Method
++     *
++     * @param : 서버 공통으로 정의된 Exception Class
++     * @return : client response
++     * @author : PLO
++     */
++    @ExceptionHandler(GlobalException.class)
++    protected ResponseEntity<ICommonBody<Void>> handleAbstractBaseException(GlobalException e) {
++        ICommonResponseCode responseCode = e.getCode();
++        HttpStatus httpStatus = responseCode.getHttpStatus();
++        String message = responseCode.getMessage();
++
++        ICommonCustomCode customCode = responseCode.getCustomCode();
++        long code = customCode.getCode();
++
++        ICommonBody<Void> body = CommonBody.of(code, message, null);
++        this.writeLog(e, message);
++        return ResponseEntity
++            .status(httpStatus)
++            .body(body);
++    }
++
++    /**
++     * Spring Framework 에서 Request 데이터 파싱중 발생한 예외를 handling 하는 Method
++     *
++     * @param : Request 관련 예외
++     * @return : client response
++     * @author : PLO
++     */
++    @ExceptionHandler(
++        {
++            BindException.class,
++            HttpMessageNotReadableException.class,
++            MethodArgumentNotValidException.class,
++            MissingServletRequestParameterException.class
++        }
++    )
++    protected ResponseEntity<ICommonBody<Void>> handleSpringRequestException(Exception e) {
++        String message = e.getMessage();
++        ICommonBody<Void> body = CommonBody.of(99999L, message, null);
++        this.writeLog(e, message);
++        return ResponseEntity
++            .status(HttpStatus.BAD_REQUEST)
++            .body(body);
++    }
++
++    /**
++     * 예외 발생시 server측 log 작성 method
++     *
++     * @param : 예외 및 예외 발생시 loggingg할 메시지
++     * @return : client response
++     * @author : PLO
++     */
++    private void writeLog(Exception e, String message) {
++        StackTraceElement[] stackTrace = e.getStackTrace();
++
++        // class name, func name 초기화
++        String defaultLog = "UNKNOWN";
++        String className = defaultLog;
++        String funcName = defaultLog;
++
++        if (stackTrace.length >= 2) {
++            className = stackTrace[2].getClassName();
++            funcName = stackTrace[2].getMethodName();
++        }
++
++        log.error(String.format("[%s][%s] %s", className, funcName, message), e);
++    }
++
++}
+\ No newline at end of file
+Index: src/main/java/com/rag/rag4j/common/exception/response/ICommonResponseCode.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/exception/response/ICommonResponseCode.java b/src/main/java/com/rag/rag4j/common/exception/response/ICommonResponseCode.java
+new file mode 100644
+--- /dev/null	(date 1732524079511)
++++ b/src/main/java/com/rag/rag4j/common/exception/response/ICommonResponseCode.java	(date 1732524079511)
+@@ -0,0 +1,14 @@
++package com.rag.rag4j.common.exception.response;
++
++import com.rag.rag4j.common.enums.code.ICommonCustomCode;
++import org.springframework.http.HttpStatus;
++
++public interface ICommonResponseCode {
++
++    HttpStatus getHttpStatus();
++
++    String getMessage();
++
++    ICommonCustomCode getCustomCode();
++
++}
+Index: src/main/java/com/rag/rag4j/common/exception/GlobalException.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/common/exception/GlobalException.java b/src/main/java/com/rag/rag4j/common/exception/GlobalException.java
+new file mode 100644
+--- /dev/null	(date 1732524079511)
++++ b/src/main/java/com/rag/rag4j/common/exception/GlobalException.java	(date 1732524079511)
+@@ -0,0 +1,16 @@
++package com.rag.rag4j.common.exception;
++
++import com.rag.rag4j.common.exception.response.ICommonResponseCode;
++import lombok.Getter;
++
++@Getter
++public class GlobalException extends RuntimeException {
++
++    private ICommonResponseCode code;
++
++    public GlobalException(ICommonResponseCode code) {
++        super(code.getMessage());
++        this.code = code;
++    }
++
++}
+Index: src/test/java/com/rag/rag4j/util/JwtSecretKeyGenerator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/com/rag/rag4j/util/JwtSecretKeyGenerator.java b/src/test/java/com/rag/rag4j/util/JwtSecretKeyGenerator.java
+new file mode 100644
+--- /dev/null	(date 1732524079526)
++++ b/src/test/java/com/rag/rag4j/util/JwtSecretKeyGenerator.java	(date 1732524079526)
+@@ -0,0 +1,46 @@
++package com.rag.rag4j.util;
++
++import java.nio.charset.StandardCharsets;
++import java.security.SecureRandom;
++import java.util.Base64;
++import java.util.Base64.Encoder;
++import javax.crypto.KeyGenerator;
++import javax.crypto.SecretKey;
++
++class JwtSecretKeyGenerator {
++
++    private static final String SEED = "RAG4J PROJECT JWT SECRET KEY BASE SEED";
++    private static final String SECURE_RAND_ALGORITHM = "SHA1PRNG";
++    private static final int KEY_SIZE = 256;
++    private static final String KEY_ALGORITHM = "HmacSHA256";
++
++    public static void main(String[] args) {
++        String key = generateSecretKey(SEED);
++        System.out.println("----- JWT KEY GENERATE SUCCESS ------");
++        System.out.println("************** JWT KEY **************");
++        System.out.println(key);
++        System.out.println("*************************************");
++    }
++
++    private static String generateSecretKey(String seed) {
++        String key = "";
++        try {
++            byte[] seedBytes = seed.getBytes(StandardCharsets.UTF_8);
++
++            SecureRandom secureRandom = SecureRandom.getInstance(SECURE_RAND_ALGORITHM);
++            secureRandom.setSeed(seedBytes);
++
++            KeyGenerator keyGen = KeyGenerator.getInstance(KEY_ALGORITHM);
++            keyGen.init(KEY_SIZE, secureRandom);
++            SecretKey secretKey = keyGen.generateKey();
++            byte[] encodedKey = secretKey.getEncoded();
++
++            Encoder encoder = Base64.getEncoder();
++            key = encoder.encodeToString(encodedKey);
++        } catch (Exception e) {
++            System.out.print("key generate error" + e.getMessage());
++        }
++        return key;
++    }
++
++}
+\ No newline at end of file
+Index: src/test/java/com/rag/rag4j/Rag4jApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/com/rag/rag4j/Rag4jApplicationTests.java b/src/test/java/com/rag/rag4j/Rag4jApplicationTests.java
+new file mode 100644
+--- /dev/null	(date 1732524079526)
++++ b/src/test/java/com/rag/rag4j/Rag4jApplicationTests.java	(date 1732524079526)
+@@ -0,0 +1,13 @@
++package com.rag.rag4j;
++
++import org.junit.jupiter.api.Test;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class Rag4jApplicationTests {
++
++    @Test
++    void contextLoads() {
++    }
++
++}
+Index: src/main/java/com/rag/rag4j/template/enums/code/TempSuccessCode.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/enums/code/TempSuccessCode.java b/src/main/java/com/rag/rag4j/template/enums/code/TempSuccessCode.java
+new file mode 100644
+--- /dev/null	(date 1732524079525)
++++ b/src/main/java/com/rag/rag4j/template/enums/code/TempSuccessCode.java	(date 1732524079525)
+@@ -0,0 +1,23 @@
++package com.rag.rag4j.template.enums.code;
++
++import com.rag.rag4j.common.enums.code.ICommonCustomCode;
++import com.rag.rag4j.common.exception.response.ICommonResponseCode;
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++import org.springframework.http.HttpStatus;
++
++@Getter
++@AllArgsConstructor
++public enum TempSuccessCode implements ICommonResponseCode {
++
++    DEFAULT(HttpStatus.OK, TempCustomSuccessCode.DEFAULT, "temp api call success"),
++    ;
++
++    private final HttpStatus httpStatus;
++
++    private final ICommonCustomCode customCode;
++
++    private final String message;
++
++
++}
+Index: src/main/java/com/rag/rag4j/template/enums/code/TempCustomErrorCode.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/enums/code/TempCustomErrorCode.java b/src/main/java/com/rag/rag4j/template/enums/code/TempCustomErrorCode.java
+new file mode 100644
+--- /dev/null	(date 1732524079524)
++++ b/src/main/java/com/rag/rag4j/template/enums/code/TempCustomErrorCode.java	(date 1732524079524)
+@@ -0,0 +1,22 @@
++package com.rag.rag4j.template.enums.code;
++
++import com.rag.rag4j.common.enums.code.ICommonCustomCode;
++import com.rag.rag4j.common.exception.response.ICommonResponseCode;
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++import org.springframework.http.HttpStatus;
++
++@Getter
++@AllArgsConstructor
++public enum TempCustomErrorCode implements ICommonResponseCode {
++
++    DEFAULT(HttpStatus.INTERNAL_SERVER_ERROR, TempErrorCode.DEFAULT, "internal server error"),
++    ;
++
++    private final HttpStatus httpStatus;
++
++    private final ICommonCustomCode customCode;
++
++    private final String message;
++
++}
+Index: src/main/java/com/rag/rag4j/template/enums/code/TempErrorCode.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/enums/code/TempErrorCode.java b/src/main/java/com/rag/rag4j/template/enums/code/TempErrorCode.java
+new file mode 100644
+--- /dev/null	(date 1732524079524)
++++ b/src/main/java/com/rag/rag4j/template/enums/code/TempErrorCode.java	(date 1732524079524)
+@@ -0,0 +1,20 @@
++package com.rag.rag4j.template.enums.code;
++
++import com.rag.rag4j.common.enums.code.ICommonCustomCode;
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++
++/**
++ * Template API 관련 Error Code
++ * 단위 : 0 ~ 500
++ * @author : Plo
++ */
++@Getter
++@AllArgsConstructor
++public enum TempErrorCode implements ICommonCustomCode {
++    DEFAULT(0)
++    ;
++
++    private final long code;
++
++}
+Index: src/main/java/com/rag/rag4j/template/enums/code/TempCustomSuccessCode.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/rag/rag4j/template/enums/code/TempCustomSuccessCode.java b/src/main/java/com/rag/rag4j/template/enums/code/TempCustomSuccessCode.java
+new file mode 100644
+--- /dev/null	(date 1732524079524)
++++ b/src/main/java/com/rag/rag4j/template/enums/code/TempCustomSuccessCode.java	(date 1732524079524)
+@@ -0,0 +1,20 @@
++package com.rag.rag4j.template.enums.code;
++
++import com.rag.rag4j.common.enums.code.ICommonCustomCode;
++import lombok.AllArgsConstructor;
++import lombok.Getter;
++
++/**
++ * Temp Api Success Code
++ * 단위 : 500 ~ 1000
++ * @author : Plo
++ */
++@Getter
++@AllArgsConstructor
++public enum TempCustomSuccessCode implements ICommonCustomCode {
++    DEFAULT(500)
++    ;
++
++    private final long code;
++
++}
+diff --git a/doc/tech/tech.md b/doc/tech/tech.md
+new file mode 100644
+diff --git a/doc/architecture.mermaid b/doc/architecture.mermaid
+new file mode 100644
