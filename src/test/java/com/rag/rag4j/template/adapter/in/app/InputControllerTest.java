@@ -23,7 +23,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(TempController.class)
-class TempControllerTest extends AbstractRestDocsTests {
+class InputControllerTest extends AbstractRestDocsTests {
 
     @Test
     void test() throws Exception {

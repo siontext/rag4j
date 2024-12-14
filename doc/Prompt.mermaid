@@ -1,0 +1,45 @@
+sequenceDiagram
+    participant US as User
+    participant WRIP as WebRestInputPort
+    participant UC as UseCase
+    participant DO as Domain
+    participant PP as PersistencePort
+    participant IP as InfraPort
+    participant DB as vectorDB
+    participant OS as OpenAi
+
+    US ->> WRIP: AI 응답 요청
+    WRIP ->>+ UC: 사용자 요청 전달
+
+%% 청크 추출
+    alt 청크 추출
+        UC ->>+ PP: 사용자 질문 전달
+        PP ->>+ DB: 벡터DB 연결 및 유사도 검사
+        DB ->>+ PP: 유사 청크 반환
+        PP ->>+ UC: 유사 청크 반환
+    end
+
+%% 프롬프트 생성
+    alt 프롬프트 생성
+        UC ->>+ DO: 프롬프트 생성 요청
+        DO ->>+ DO: 프롬프트 생성로직
+        DO ->>+ UC: 생성된 프롬프트 반환
+    end
+
+%% 템플릿 생성
+    alt 템플릿 생성
+        UC ->>+ DO: 템플릿 생성 요청
+        DO ->>+ DO: 템플릿 생성 로직
+        DO ->>+ UC: 생성된 템플릿 반환
+    end
+
+%% AI 응답 요청
+    alt AI 응답 요청
+        UC ->>+ IP: 템플릿 전달
+        IP ->>+ OS: OpenAI 응답 요청
+        OS ->>+ IP: OpenAI 응답 반환
+        IP ->>+ UC: AI 응답 반환
+
+        UC -->> WRIP: AI 응답 반환
+        WRIP -->> US: AI 응답 반환
+    end
